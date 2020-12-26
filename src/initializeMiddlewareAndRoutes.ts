@@ -7,7 +7,6 @@ import boom from 'express-boom';
 import cors from 'cors';
 import compression from 'compression';
 import morgan from 'morgan';
-import helmet from 'helmet';
 
 // Routes
 import api from './routes/api';
@@ -27,7 +26,6 @@ export const initializeMiddlewareAndRoutes = async (app: Express) => {
     cors({ origin: '*' }),
     compression(),
     morgan('dev'),
-    helmet(),
   ];
 
   const routes = [api, normal];
