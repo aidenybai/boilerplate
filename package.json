@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon",
     "start": "node dist/app.js",
-    "build": "tsc"
+    "build": "tsc",
+    "cleanup": "prettier -w src"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -16,6 +17,7 @@
     "eta": "^1.12.1",
     "express": "^4.17.1",
     "express-boom": "^3.0.0",
+    "mongoose": "^5.11.8",
     "morgan": "^1.10.0"
   },
   "devDependencies": {

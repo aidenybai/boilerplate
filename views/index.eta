@@ -1,13 +1,27 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-  
-    <title>Boilerplate</title>
+    <%~ includeFile('./partials/head.eta', { title: it.title, description: it.description, image: it.image, color: it.color }) %>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title><%= it.title %></title>
   </head>
 
   <body>
-    <h1>Henlo World</h1>
+    <div l-state="{ msg: 'Hello World' }">
+      <h1 l-text="this.msg"></h1>
+    </div>
 
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <script src="https://unpkg.com/lucia"></script>
