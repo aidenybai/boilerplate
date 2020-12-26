@@ -8,6 +8,16 @@ simple, no-bullshit fullstack web boilerplate
 - [typescript](https://www.typescriptlang.org/)
 - [node](https://nodejs.org)
 
+### install
+
+```
+git clone https://github.com/aidenybai/boilerplate.git
+cd boilerplate
+yarn
+```
+
+or just use vscode 🤡
+
 ### instructions
 
 dev start
